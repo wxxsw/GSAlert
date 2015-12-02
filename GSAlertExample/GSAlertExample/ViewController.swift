@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         showAlert(.Alert, title: "This is Alert!", message: "some message...", sourceView: sender, actions: [
             AlertAction(title: "Cancel", type: .Cancel, handler: nil),
             AlertAction(title: "Sure", type: .Default) {
-                print("I'm sure. (Alert)")
+                print("I'm Alert.")
             }
         ])
     }
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         showAlert(.ActionSheet, title: "This is ActionSheet!", message: "some message...", sourceView: sender, actions: [
             AlertAction(title: "Cancel", type: .Cancel, handler: nil),
             AlertAction(title: "Sure", type: .Default) {
-                print("I'm sure. (ActionSheet)")
+                print("I'm ActionSheet.")
             }
         ])
     }
