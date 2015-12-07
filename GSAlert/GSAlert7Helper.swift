@@ -21,9 +21,9 @@ class BlockActionSheet: UIActionSheet, UIActionSheetDelegate, iOS7AlertProtocol 
      
      - returns: BlockActionSheet
      */
-    class func actionSheetWithActions(actions: [AlertAction], title: String) -> BlockActionSheet {
+    class func actionSheetWithActions(actions: [AlertAction], title: String?) -> BlockActionSheet {
         var actionSheet = BlockActionSheet()
-        actionSheet.title = title
+        if let title = title { actionSheet.title = title }
         actionSheet.delegate = actionSheet
         actionSheet.setupActions(actions)
         return actionSheet
@@ -72,9 +72,9 @@ class BlockAlertView: UIAlertView, UIAlertViewDelegate, iOS7AlertProtocol {
      
      - returns: BlockAlertView
      */
-    class func alertViewWithActions(actions: [AlertAction], title: String, message: String) -> BlockAlertView {
+    class func alertViewWithActions(actions: [AlertAction], title: String?, message: String?) -> BlockAlertView {
         var alertView = BlockAlertView()
-        alertView.title = title
+        alertView.title = title ?? ""
         alertView.message = message
         alertView.delegate = alertView
         alertView.setupActions(actions)

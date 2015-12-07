@@ -22,7 +22,7 @@ extension UIAlertController {
      
      - returns: UIAlertController
      */
-    class func alertWithType(type: AlertType, title: String, message: String, sourceView: UIView?, actions: [AlertAction]) -> UIAlertController {
+    class func alertWithType(type: AlertType, title: String?, message: String?, sourceView: UIView?, actions: [AlertAction]) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle(rawValue: type.rawValue)!)
         
         for action in actions {

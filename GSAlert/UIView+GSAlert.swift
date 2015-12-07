@@ -19,7 +19,7 @@ extension UIView {
      - parameter sourceView: iPad中，弹窗指向的View
      - parameter actions:    动作数组
      */
-    func showAlert(type: AlertType, title: String, message: String, sourceView: UIView?, actions: [AlertAction]) {
+    func showAlert(type: AlertType, title: String?, message: String?, sourceView: UIView?, actions: [AlertAction]) {
         
         if #available(iOS 8.0, *) {
             
