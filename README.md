@@ -13,7 +13,14 @@
 
 在任何界面或视图中直接调用：
 ```swift
-// 显示ActionSheet时，将.Alert改为.ActionSheet
+//
+// - 参数说明
+// - parameter type:        .Alert 或 .ActionSheet
+// - parameter title:       标题
+// - parameter message:     内容
+// - parameter sourceView:  iPad下popover容器指向的view，如不支持iPad设为nil
+// - parameter actions:     按钮集合
+//
 self.showAlert(.Alert, title: "This is Alert!", message: "some message...", sourceView: sender, actions: [
     AlertAction(title: "Cancel", type: .Cancel, handler: nil),
     AlertAction(title: "Sure", type: .Default) {
