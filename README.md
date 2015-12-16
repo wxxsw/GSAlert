@@ -1,25 +1,20 @@
-# GSAlert
+# GSAlert [中文说明](https://github.com/wxxsw/GSAlert/blob/master/README-zh.md)
 
-苹果在iOS8推出了全新的`UIAlertController`，旧的`UIAlertView`和`UIActionSheet`渐渐被废弃，但如果你仍然支持iOS7系统，你将不得不写两套代码。`GSAlert`解决了这个问题。
+If you want to use UIAlertController, but still need to support iOS 7 this project is for you. 
 
 ## Key Features
 
-* 简单调用
-* 当运行于iOS8+时自动使用`UIAlertController`，iOS7时自动使用`UIAlertView`和`UIActionSheet`
-* 可在UIView中调用，自动寻找合适的控制器显示
-* 支持iPad
+* On iOS 7 GSAlert uses UIAlertView or UIActionSheet and on iOS 8 it uses UIAlertController to show Alerts and Action Sheets.
+* Support UIView.
+* Support iPad
 
 ## Example
 
-在任何界面或视图中直接调用：
+Show alert at controller or view:
 ```swift
 //
-// - 参数说明
-// - parameter type:        .Alert 或 .ActionSheet
-// - parameter title:       标题
-// - parameter message:     内容
-// - parameter sourceView:  iPad下popover容器指向的view，如不支持iPad设为nil
-// - parameter actions:     按钮集合
+// - parameter type:        .Alert or .ActionSheet
+// - parameter sourceView:  iPad popover from
 //
 self.showAlert(.Alert, title: "This is Alert!", message: "some message...", sourceView: sender, actions: [
     AlertAction(title: "Cancel", type: .Cancel, handler: nil),
@@ -31,7 +26,7 @@ self.showAlert(.Alert, title: "This is Alert!", message: "some message...", sour
 
 ## Installation
 
-将`GSAlert`文件夹拖拽到你的项目中即可。
+Drag `GSAlert` folder to your project.
 
 ## Requirements
 
