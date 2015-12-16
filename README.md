@@ -4,17 +4,16 @@ If you want to use UIAlertController, but still need to support iOS 7 this proje
 
 ## Key Features
 
-* On iOS 7 GSAlert uses UIAlertView or UIActionSheet and on iOS 8 it uses UIAlertController to show Alerts and Action Sheets.
-* Support UIView.
-* Support iPad
+* On iOS 7 GSAlert uses UIAlertView or UIActionSheet and on iOS 8 it uses UIAlertController.
+* Support iPad.
 
 ## Example
 
-Show alert at controller or view:
+Show alert in controller or view:
 ```swift
 //
-// - parameter type:        .Alert or .ActionSheet
-// - parameter sourceView:  iPad popover from
+// - parameter type       : .Alert or .ActionSheet
+// - parameter sourceView : iPad popover from
 //
 self.showAlert(.Alert, title: "This is Alert!", message: "some message...", sourceView: sender, actions: [
     AlertAction(title: "Cancel", type: .Cancel, handler: nil),
