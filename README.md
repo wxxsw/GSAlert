@@ -30,7 +30,6 @@ Drag `GSAlert` folder to your project.
 ## Requirements
 
 * iOS 7.0+
-* Xcode7.1
 
 ## License
 
