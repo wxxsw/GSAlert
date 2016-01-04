@@ -36,7 +36,6 @@ self.showAlert(.Alert, title: "This is Alert!", message: "some message...", sour
 ## Requirements
 
 * iOS 7.0+
-* Xcode7.1
 
 ## License
 
